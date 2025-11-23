@@ -1,0 +1,34 @@
+.root{
+    --trans-color:#1312126b;
+    --body-color:#1311212;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url(/Assest/Img/background_2.jpg)no-repeat center;
+    background-size: cover;
+}
+.hero::before{
+    content: "";
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background:rgba(0, 0,0, 0.3);
+    z-index: 2;
+}
+.heroSection{
+    position: relative;
+    z-index: 2;
+}
+.heroSection h1{
+    color:white;
+}
+.cardSection{
+    padding-top:22%;
+}
+.herobtn i{
+    padding-left: 10px;
+}
