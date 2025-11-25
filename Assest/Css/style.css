@@ -42,17 +42,45 @@ border-radius: 30px;
 .herobtn i{
     padding-left: 10px;
 }
-.card img {
-  height: 190px;
-  object-fit: cover;
-  border-radius: 5px;
+.movie-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    cursor: pointer;
 }
 
-.card {
-  border: none;
-  transition: transform 0.5s ease;
+.movie-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    transition: 0.4s ease;
 }
 
-.card:hover {
-  transform: scale(1.15);
+.movie-card:hover img {
+    transform: scale(1.2);
+    filter: brightness(40%);
 }
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(1,0,0,9), transparent);
+    color: white;
+    transition: 0.3s ease;
+}
+
+.overlay h5 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.overlay p {
+    margin: 0;
+    color: #ffc107; /* gold */
+    font-weight: 500;
+}
+
+
