@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Assest/Css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <title>ReelBlaze</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <div class="container">
+        <a class="navbar-brand text-warning fw-bold fs-2" href="#">ReelBlaze</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mx-5" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-link">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-white fs-4"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fs-4 mx-xl-4" href="#">Top IMDB</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white fs-4" href="#" tabindex="-1"
+                >TV Shows</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              id="search"
+              class="form-control me-3 rounded-4"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn text-bg-warning rounded-5" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 main-Card px-lg-5">
+            <img
+              src="/Assest/Img/wednesday.jpg"
+              class=""
+              alt=""
+              id="searchImage"
+            />
+          </div>
+          <div
+            class="col-12 col-md-6 col-lg-8 mt-5 text-lg-start text-sm-end main-Card px-lg-5"
+          >
+            <h1 class="text-white display-4 fw-bold" id="m-name">Wednesday</h1>
+            <p id="plot" class="text-white fs-5">
+              An FBI Agent seeks vengeance on a mysterious assassin known as
+              \"Rogue\" who murdered his partner.
+            </p>
+            <div class="row text-start">
+              <div class="col-6 col-sm-3 col-lg-2">
+                <h6 id="" class="text-white fw-semibold">Actore</h6>
+                <h6 id="" class="text-white fw-semibold">IMBD Rate</h6>
+                <h6 id="" class="text-white fw-semibold">Year</h6>
+                <h6 id="" class="text-white fw-semibold">Director</h6>
+                <h6 id="" class="text-white fw-semibold">Run Time</h6>
+                <h6 id="" class="text-white fw-semibold">Genre </h6>
+                <h6 id="" class="text-white fw-semibold">Language</h6>
+                
+              </div>
+              <div class="col-6 col-sm-8 col-lg-10">
+                <h6 id="actore" class="text-white">jhone</h6>
+                <h6 id="rate" class="text-white">6.5</h6>
+                <h6 id="year" class="text-white">2021</h6>
+                <h6 id="directore" class="text-white">Yashan</h6>
+                <h6 id="time" class="text-white">102min</h6>
+                <h6 id="genre" class="text-white">grnre</h6>
+                <h6 id="language" class="text-white">english</h6>
+              </div>
+             
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="/Assest/js/app.js"></script>
+  </body>
+</html>
