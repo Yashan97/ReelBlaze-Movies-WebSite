@@ -1,4 +1,4 @@
-let apiKey = "ea5c7376";
+//let apiKey = "ea5c7376";
 
 let movie = document.getElementById("search");
 movie.addEventListener("keypress", (e) => {
@@ -31,7 +31,7 @@ let searchMovies = (data) => {
   searchImage.src = data.Poster;
   plot.innerText = data.Plot;
   actore.innerText = data.Actors;
-  rate.innerText = data.imdbID;
+  rate.innerText = data.imdbRating;
   year.innerText = data.Year;
   directore.innerText = data.Director;
   runTime.innerText = data.Runtime;
