@@ -1,86 +1,97 @@
-.root{
-    --trans-color:#1312126b;
-    --body-color:#1311212;
+.root {
+  --trans-color: #1312126b;
+  --body-color: #1311212;
 }
-.nav-link{
-transition: transform 0.5s ease;
-border-radius: 30px;
-
+.nav-link {
+  transition: transform 0.5s ease;
+  border-radius: 30px;
 }
-.nav-link a:hover{
-    border-radius: 30px;
-    transform: scale(1.25);
-
+.nav-link a:hover {
+  border-radius: 30px;
+  transform: scale(1.25);
 }
-.hero{
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    background: url(/Assest/Img/background_2.jpg)no-repeat center;
-    background-size: cover;
+.hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url(/Assest/Img/background_2.jpg) no-repeat center;
+  background-size: cover;
 }
-.hero::before{
-    content: "";
-    position:absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background:rgba(0, 0,0, 0.4);
-    z-index: 2;
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 2;
 }
-.heroSection{
-    position: relative;
-    z-index: 2;
+.heroSection {
+  position: relative;
+  z-index: 2;
 }
-.heroSection h1{
-    color:white;
+.heroSection h1 {
+  color: white;
 }
-.cardSection{
-    padding-top:22%;
+.cardSection {
+  padding-top: 22%;
 }
-.herobtn i{
-    padding-left: 10px;
+.herobtn i {
+  padding-left: 10px;
 }
 .movie-card {
-    position: relative;
-    overflow: hidden;
-    border-radius: 12px;
-    cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
 .movie-card img {
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-    transition: 0.4s ease;
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  transition: 0.4s ease;
 }
 
 .movie-card:hover img {
-    transform: scale(1.2);
-    filter: brightness(40%);
+  transform: scale(1.2);
+  filter: brightness(40%);
 }
 
 .overlay {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 20px;
-    background: linear-gradient(to top, rgba(1,0,0,9), transparent);
-    color: white;
-    transition: 0.3s ease;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(1, 0, 0, 9), transparent);
+  color: white;
+  transition: 0.3s ease;
 }
 
 .overlay h5 {
-    margin: 0;
-    font-size: 18px;
-    font-weight: bold;
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .overlay p {
-    margin: 0;
-    color: #ffc107; /* gold */
-    font-weight: 500;
+  margin: 0;
+  color: #ffc107; /* gold */
+  font-weight: 500;
 }
+.main-Card img {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 30px;
+  width: 350px;
+  height: 450px;
+}
+.addbtnfont i {
+  font-size: 15px;
 
-
+}
+.addbtnfont{
+    margin-top: 10px;
+   
+}
