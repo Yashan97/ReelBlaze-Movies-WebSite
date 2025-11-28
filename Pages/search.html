@@ -1,119 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/Assest/Css/style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-    <title>ReelBlaze</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-      <div class="container">
-        <a class="navbar-brand text-warning fw-bold fs-2" href="#">ReelBlaze</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse mx-5" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-link">
-            <li class="nav-item">
-              <a
-                class="nav-link active text-white fs-4"
-                aria-current="page"
-                href="#"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white fs-4 mx-xl-4" href="#">Top IMDB</a>
-            </li>
 
-            <li class="nav-item">
-              <a class="nav-link text-white fs-4" href="#" tabindex="-1"
-                >TV Shows</a
-              >
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input
-              id="search"
-              class="form-control me-3 rounded-4"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn text-bg-warning rounded-5" type="submit">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-          </form>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/Assest/Css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="favicon.ico" />
+  <title>ReelBlaze</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <div class="container">
+      <a class="navbar-brand text-warning fw-bold fs-2" href="/index.html">ReelBlaze</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse mx-5" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-link">
+          <li class="nav-item">
+            <a class="nav-link active text-white fs-4" aria-current="page" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white fs-4 mx-xl-4" href="#">Top IMDB</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-white fs-4" href="#" tabindex="-1">TV Shows</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input id="search" class="form-control me-3 rounded-4" type="search" placeholder="Search"
+            aria-label="Search" />
+            
+          <button  onclick="addbtn()" class="btn text-bg-warning rounded-5" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+      
+    </div>
+  </nav>
+
+  <div class="container-fluid bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 main-Card px-lg-5">
+          <img src="/Assest/Img/wednesday.jpg" class="" alt="" id="searchImage" />
+        </div>
+        <div class="col-12 col-md-6 col-lg-8 mt-5 text-lg-start text-sm-end main-Card px-lg-5">
+          <h1 class="text-white display-4 fw-bold" id="m-name">Wednesday</h1>
+          <p id="plot" class="text-white fs-5">
+            An FBI Agent seeks vengeance on a mysterious assassin known as
+            \"Rogue\" who murdered his partner.
+          </p>
+          <div class="row text-start">
+            <div class="col-3 col-sm-2 col-lg-2">
+              <h6 id="" class="text-warning fw-semibold">Actore</h6>
+              <h6 id="" class="text-warning fw-semibold">IMBD Rate</h6>
+              <h6 id="" class="text-warning fw-semibold">Year</h6>
+              <h6 id="" class="text-warning fw-semibold">Director</h6>
+              <h6 id="" class="text-warning fw-semibold">Run Time</h6>
+              <h6 id="" class="text-warning fw-semibold">Genre </h6>
+              <h6 id="" class="text-warning fw-semibold">Language</h6>
+
+            </div>
+            <div class="col-9 col-sm-10 col-lg-10">
+              <h6 id="actore" class="text-white">jhone</h6>
+              <h6 id="rate" class="text-white">6.5</h6>
+              <h6 id="year" class="text-white">2021</h6>
+              <h6 id="directore" class="text-white">Yashan</h6>
+              <h6 id="time" class="text-white">102min</h6>
+              <h6 id="genre" class="text-white">grnre</h6>
+              <h6 id="language" class="text-white">english</h6>
+            </div> 
+
+            <div class="col-3 ">
+              <button class="btn btn-light text-center px-5 fw-semibold mt-3 rounded-5"  onclick="addFavorite()">Add<i
+                              class="fa-solid fa-plus text-dark px-2 "></i></a></button>
+            </div>
+            
+          </div>
         </div>
       </div>
-    </nav>
+    </div>
 
-    <div class="container-fluid bg-dark">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-6 col-lg-4 main-Card px-lg-5">
-            <img
-              src="/Assest/Img/wednesday.jpg"
-              class=""
-              alt=""
-              id="searchImage"
-            />
-          </div>
-          <div
-            class="col-12 col-md-6 col-lg-8 mt-5 text-lg-start text-sm-end main-Card px-lg-5"
-          >
-            <h1 class="text-white display-4 fw-bold" id="m-name">Wednesday</h1>
-            <p id="plot" class="text-white fs-5">
-              An FBI Agent seeks vengeance on a mysterious assassin known as
-              \"Rogue\" who murdered his partner.
-            </p>
-            <div class="row text-start">
-              <div class="col-6 col-sm-3 col-lg-2">
-                <h6 id="" class="text-white fw-semibold">Actore</h6>
-                <h6 id="" class="text-white fw-semibold">IMBD Rate</h6>
-                <h6 id="" class="text-white fw-semibold">Year</h6>
-                <h6 id="" class="text-white fw-semibold">Director</h6>
-                <h6 id="" class="text-white fw-semibold">Run Time</h6>
-                <h6 id="" class="text-white fw-semibold">Genre </h6>
-                <h6 id="" class="text-white fw-semibold">Language</h6>
-                
-              </div>
-              <div class="col-6 col-sm-8 col-lg-10">
-                <h6 id="actore" class="text-white">jhone</h6>
-                <h6 id="rate" class="text-white">6.5</h6>
-                <h6 id="year" class="text-white">2021</h6>
-                <h6 id="directore" class="text-white">Yashan</h6>
-                <h6 id="time" class="text-white">102min</h6>
-                <h6 id="genre" class="text-white">grnre</h6>
-                <h6 id="language" class="text-white">english</h6>
-              </div>
-             
-              
+    <!--Favorite movies card section-->
+    <div class="container-fluid mt-3 ">
+      <div class="topic">
+        <div class="container">
+          <h2 class="text-white fw-bold ">Favourite Movies</h2>
+        </div>
+        
+      </div>
+      <div class=" mt-5">
+        <div class="container-fluid bg-dark">
+        <div class="row g-4">
+          <div class="container my-3">
+            <div class="row g-4 " id="favMovies">
             </div>
           </div>
         </div>
       </div>
     </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
-    <script type="module" src="/Assest/js/app.js"></script>
-  </body>
+    
+  <div class="container-fluid bg-dark">
+    <!--Footer Section-->
+       
+        <div class="container-fluid my-5">
+
+          <footer class="text-white text-center text-lg-start bg-dark">
+            <!-- Grid container -->
+            <div class="container-fluid p-4">
+              <!--Grid row-->
+              <div class="row mt-4">
+                <!--Grid column-->
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                  <h5 class="text-uppercase fw-bold mb-4">About Us </h5>
+
+                  <p>
+                  Welcome to our movie platform, a space dedicated to exploring the art, history,
+                   and creativity of cinema. Our mission is to provide students, film enthusiasts, 
+                   and casual viewers with accurate, engaging, and educational content about movies 
+                   from around the world. From timeless classics to modern blockbusters, 
+                   we aim to help you discover new films, understand storytelling techniques,
+                    and appreciate the power of visual storytelling. This website is created as 
+                    part of an academic project, with the goal of delivering a clean, informative,
+                     and user-friendly experience for all visitors.
+                  </p>
+
+              
+
+                  <div class="mt-2 ">
+                    <!-- Facebook -->
+                    <a type="button" class="btn btn-floating btn-warning  mx-2"><i class="fab fa-facebook-f"></i></a>
+                    <!-- Dribbble -->
+                    <a type="button" class="btn btn-floating btn-warning mx-2"><i class="fab fa-youtube"></i></a>
+                    <!-- Twitter -->
+                    <a type="button" class="btn btn-floating btn-warning mx-2"><i class="fab fa-twitter"></i></a>
+                    <!-- Google + -->
+                    <a type="button" class="btn btn-floating btn-warning mx-2"><i class="fab fa-google-plus-g"></i></a>
+                    <!-- Linkedin -->
+                  </div>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0 mt-0 mx-lg-5 ">
+                  <h5 class="text-uppercase mb-4 pb-1">Search</h5>
+
+                  <div class="form-outline form-white mb-2 text-end ">
+                    <input type="text" id="formControlLg" class="form-control form-control-sm" />
+                    <button class="btn btn-outline-light btn-group-sm mt-2"><a href=""></a>Search</button>
+                    
+                  </div>
+
+                  <ul class="fa-ul" style="margin-left: 1.65em;">
+                    <li class="mb-3">
+                      <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Kalutara</span>
+                    </li>
+                    <li class="mb-3">
+                      <span class="fa-li"><i class="fas fa-envelope"></i></span><span
+                        class="ms-2">s.d.y.anupama@gmail.com</span>
+                    </li>
+                    <li class="mb-3">
+                      <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">0714204745</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Copyright -->
+                <div class="text-center p-3 mt-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                  © 2020 Copyright:
+                  <a class="text-white" href="https://mdbootstrap.com/">Yashan Anupama</a>
+                </div>
+                <!-- Copyright -->
+          </footer>
+  </div>
+  
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="/Assest/js/app.js"></script>
+  <script src="fav.js"></script>
+</body>
+
 </html>
