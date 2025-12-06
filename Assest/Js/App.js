@@ -22,7 +22,7 @@ let apicall = (movie) => {
 };
 
 let addFavorite = () => {
-  let imdbid = currentMovie.imdbID;
+let imdbid = currentMovie.imdbID;
   favMoviesId.push(imdbid);
   LoadFavMovies();
   
@@ -91,7 +91,7 @@ async function loadTopRatedMovies() {
                         <h6><i class="fa-brands fa-imdb mx-1 "></i>IMDB: ${movie.imdbRating}</h6>
                         <h6><i class="fa-solid fa-clock mx-1"></i>${movie.Runtime}</h6>
                         
-                        <button class="btn btn-light  addbtnfont rounded-5"><a href="#"><i
+                        <button class="btn btn-light  addbtnfont rounded-5 " onclick="addFavorite()"><a href="#"><i
                               class="fa-solid fa-plus text-dark "></i></a></button>
                       </div>
                       
@@ -163,9 +163,10 @@ const favMoviesId = [
 ];
 
 
+
 async function LoadFavMovies() {
   let container = document.getElementById("favMovies");
-  container.innerHTML= "";
+    container.innerHTML= "";
   for (let id of favMoviesId) {
     let url = `https://www.omdbapi.com/?i=${id}&apikey=${apiKey}`;
     let res = await fetch(url);
@@ -188,8 +189,8 @@ async function LoadFavMovies() {
                         <h6><i class="fa-brands fa-imdb mx-1 "></i>IMDB: ${movie.imdbRating}</h6>
                         <h6><i class="fa-solid fa-clock mx-1"></i>${movie.Runtime}</h6>
                         
-                        <button class="btn btn-light  addbtnfont rounded-5"><a href="#"><i
-                              class="fa-solid fa-play text-dark "></i></a></button>
+                        <button class="btn btn-light  addbtnfont rounded-5" onclick="removeID(${movie.imdbID})"><a href=""><i
+                              class="fa-solid fa-heart text-dark "></i></a></button>
                       </div>
                       
                       
@@ -201,4 +202,13 @@ async function LoadFavMovies() {
     );
   }
 }
+
+//-------------remove favorite movie--------
+
+let removeID = (data) => {
+  let remove = data.imdbID;
+  favMoviesId.splice(remove);
+  LoadFavMovies();
+  }
+  
 
